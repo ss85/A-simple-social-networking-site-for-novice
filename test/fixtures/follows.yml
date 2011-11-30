@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+follows_T1_2:
+  user: testUser_1
+  followed_user: testUser_2
+
+follows_T1_3:
+  user: testUser_1
+  followed_user: testUser_3
+
+follows_T2_3:
+  user: testUser_2
+  followed_user: testUser_3
+
+follows_T3_2:
+  user: testUser_3
+  followed_user: testUser_2

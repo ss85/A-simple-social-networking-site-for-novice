@@ -1,0 +1,10 @@
+<h1>Listing posts for <%= @user %></h1>
+<% if @posts.empty? %>
+  <p>User has no posts!</p>
+  <br />
+<% else %>
+  <%  @posts.each do |post| %>
+    <%= render :partial => "posts/displayPost", :locals => {:post => post} %>
+  <% end %>
+<% end %>
+<%= link_to 'Back to all posts', posts_path %> | <%= link_to 'Back to all users', users_path %>

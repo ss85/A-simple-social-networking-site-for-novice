@@ -1,0 +1,9 @@
+<h1>Welcome to Bookie!</h1>
+<%= render :partial => "postForm", :locals => {:button_text => "Create!"} %>
+<br />
+<h1>Recently Read!</h1>
+<br />
+<% @posts.each do |dispost| %>
+  <%= render :partial => "displayPost", :locals => {:post => dispost} %>
+<% end %>
+<br />

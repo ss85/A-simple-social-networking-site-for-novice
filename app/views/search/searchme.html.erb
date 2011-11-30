@@ -1,0 +1,20 @@
+<h1>Search!</h1>
+<% form_tag do %>
+
+<fieldset>
+  <legend>Search</legend>
+  <p>
+    <label for="searchfor">Search For:</label>
+    <%= select_tag :searchFor, "<option>Author</option><option>Title</option><option>User</option>" %>
+    <label for="searchTerm">Search Term:</label>
+    <%= text_field_tag :searchTerm, params[:searchTerm] %>
+  </p>
+  <%= submit_tag "Search!" %>
+</fieldset>
+
+<% end %>
+<br />
+<% if @results %>
+    <%= render :partial => "searchResults", :locals =>{:results => @results, :searchTerm => @searchTerm, :searchFor => @searchFor} %>
+<% end %>
+ <br />

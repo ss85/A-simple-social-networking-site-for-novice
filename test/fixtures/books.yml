@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+testBook1:
+  author: Test
+  title: Test
+
+testBook2:
+  author: Jed
+  title: Testing Rails
+
+testBook3:
+  author: Bob
+  title: Life of bob

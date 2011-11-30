@@ -1,0 +1,9 @@
+<h1>People Following Me</h1>
+<% if !@followers.empty? %>
+<%= render :partial => "listUsers", :locals => {:user_list => @followers} %>
+<% else %>
+<p>No users following you!</p>
+<p><%= link_to "Click here to make an interesting post!", new_post_path %></p>
+<br />
+<% end %>
+<%= link_to 'Back to all users', users_path %>

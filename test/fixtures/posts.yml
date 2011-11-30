@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+testPost:
+  book: testBook1
+  user: testUser_1
+  mood: Happy
+  location: Home
+  thoughts: Good
+
+userPost:
+  book: testBook2
+  user: testUser_1
+  mood: Unhappy
+  location: Away
+  thoughts: Bad

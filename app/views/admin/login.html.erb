@@ -1,0 +1,18 @@
+<%#*Login screen for Bookie - displays simple form for user to enter username and password%>
+<h1>Login to Bookie!</h1>
+<% form_tag do %>
+
+<fieldset>
+  <legend>Please log in</legend>
+  <p>
+    <label for="username">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <%= text_field_tag :username, params[:username] %>
+  </p>
+  <p>
+    <label for="password">Password:</label>
+    <%= password_field_tag :password, params[:password] %>
+  </p>
+  <%= submit_tag "Login" %>
+</fieldset>
+
+<% end %>

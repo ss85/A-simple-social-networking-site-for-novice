@@ -1,0 +1,8 @@
+<h1>View Individual Post</h1>
+<% if @post %>
+<%= render :partial => "layout/posts", :partial => "displayPost", :locals => {:post => @post} %>
+<% else %>
+<p>Sorry, no such post exists!</p>
+<br />
+<% end %>
+<%= link_to 'Back to all posts', posts_path %>

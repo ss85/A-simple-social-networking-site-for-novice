@@ -1,0 +1,24 @@
+<%#*Partial to show details of a particular user%>
+<%#*Used to display other users and also on the current user edit screen%>
+<h1>Details for <%= user.username %></h1>
+<table class="tableUser">
+  <tr>
+    <td><b>Joined On:</b></td>
+    <td><%= user.created_at.getlocal.to_s(:long_ordinal) %></td>
+  </tr>
+  <tr>
+    <td><b>Number of Posts:</b></td>
+    <td><%= user.number_of_posts()%></td>
+  </tr>
+  <tr>
+    <td><b>Number of Followers:</b></td>
+    <td><%= user.number_of_followers()%></td>
+  </tr>
+  <tr>
+    <td><b>Number of Followees:</b></td>
+    <td><%= user.number_of_followees()%></td>
+  </tr>
+</table>
+<br />
+<% if user != @currentUser %><p class="followme"><%= follow_helper(user) %></p><% end %>
+<p class="userdetails"><%= link_to 'Back to Users', users_path %></p>

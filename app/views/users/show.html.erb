@@ -1,0 +1,7 @@
+<% if @user %>
+<%= render :partial => "showUser", :locals => {:user => @user} %>
+<% else %>
+<p>Sorry, no such user exists!</p>
+<%= link_to 'Back to all users', users_path %>
+<br />
+<% end %>

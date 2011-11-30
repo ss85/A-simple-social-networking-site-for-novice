@@ -1,0 +1,297 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+h1 {
+  height: 30px;
+  width:350px;
+  padding: 5px;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 50px;
+  background: #0D4A76;
+  color: #FFF;
+  margin-left: -20px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin: 10px 5px;
+  background-color: #f0f0f0;
+
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+  border: 0;
+  -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#header
+{
+    background: #0D4A76 url('../images/Bookie.png') no-repeat center;
+    height: 100px;
+}
+
+#container {
+    width: 98%;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding-bottom: 1px
+}
+
+
+#main {
+    padding-left: 20px;
+    background: #DFEEFF;
+    margin: 0;
+}
+
+#universe {
+    background: #91B9EC;
+}
+
+#nav {
+    background: #91B9EC;
+    height: 23px;
+    color: #fff;
+    padding: 5px 10px 0 5px;
+    margin: 0;
+}
+
+#navigation a
+{
+    color: #FFF;
+    background: #91B9EC;
+    text-decoration: none;
+    padding: 5px 10px 2px 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#navigation a:hover {
+    color: #fff;
+    background: #0D4A76;
+    text-decoration: none;
+    padding: 5px 10px 2px 5px;
+}
+#navigation
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li
+{
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.followme {
+    margin: 5px 10px;
+    padding: 5px;
+    font-weight: bold;
+    border-color: #FFFFFF #666666 #666666 #FFFFFF;
+    background-color: #b0c4de; border-style: solid;
+    border-top-width: 1px; border-right-width: 1px;
+    border-bottom-width: 1px; border-left-width: 1px;
+    width: 60px;
+}
+
+.floatRight {
+    float:right;
+}
+
+.users td {
+    padding: 5px;
+    text-align: center;
+}
+
+div.post {
+    padding: 15px;
+    border: 3px #000000 solid;
+    background-color: #FFFFFF;
+    display: table;
+    margin: 0 auto;
+    width: 550px;
+    -moz-border-radius: 10px 40px 10px 40px;
+    border-radius: 10px 40px 10px 40px;
+}
+
+.post {
+    font-size: large;
+}
+
+p.dateline {
+    background-color: #FFFFCC;
+    font-size: small;
+    margin: 0;
+    padding-left: 5px;
+}
+
+p.options {
+    margin: 0;
+    background-color: #6FA3FF;
+    font-size: small;
+    padding-left: 5px;
+}
+
+.newPost {
+    background-color: #FFF;
+    width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bolder;
+    color: #000;
+    text-align: left;
+    border: 3px solid #0D4A76;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.newPost h2 {
+    font-size: 150%;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #CFDCFF;
+    border: solid 2px #000;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.newPost p {
+    margin: 5px;
+}
+
+p.button {
+    text-align: center;
+}
+
+div.notices {
+    margin: 0 auto;
+    color: red;
+    padding: 10px;
+    background: #EFEFEF;
+    border: 2px #000 solid;
+    width: 75%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+
+    
+}
+
+table.postTable {
+    padding: 5px;
+}
+
+p.username {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 10px;
+}
+
+p.userdetails {
+    font-size: small;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.usersOdd {
+    width: 400px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 3px solid #0D4A76;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #FFFFCC;
+}
+
+.usersEven {
+    width: 400px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 3px solid #0D4A76;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #FFF;
+}
+
+.tableUser {
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #000;
+    background-color: #FFF;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#footer {
+    margin: 5% 10% 1% 10%;
+    padding: 1% 2%;
+    border: 5px #6A80A5 solid;
+    background: #C6DEEA;
+    text-align: center;
+}
+
+#footerContainer {
+    padding: 5% 10% 2% 10%;
+    background: #DFEEFF;
+    border-bottom: 10px solid #91B9EC;
+}
+
+p.currentUser {
+    margin: 10px;
+    color: #FFF;
+    font-weight:bold;
+}

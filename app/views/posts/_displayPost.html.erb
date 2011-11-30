@@ -1,0 +1,46 @@
+<%#*Partial to display a post%>
+<div class="post">
+  <b><%=h user_posts_helper(post.user) %></b> is reading <i>"<%= post.book.title %>"</i> by <%= post.book.author %><br />
+  <table class ="postTable">
+    <tr>
+      <td>
+        <b>Mood:</b>
+      </td>
+      <td>
+         <%= post.mood %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Location:</b>
+      </td>
+      <td>
+        <%= post.location %>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        <b>Thoughts:</b>
+      </td>
+      <td>
+        <%= post.thoughts %>
+      </td>
+    </tr>
+  </table>
+  <div class="floatRight"></div>
+  <p class="dateline">Posted at <%= post.created_at.getlocal.to_s(:long_ordinal) %></p>
+  <p class ="options">
+    Options:
+        <%= link_to 'View post details', post %> |
+        View all from <%= user_posts_helper(post.user) %> |
+        <%= link_to 'View user details', post.user %>
+        <%= " | " if follow_helper(post.user) %>
+        <%= follow_helper(post.user) %>
+        <%= " | " if edit_post_helper(post) %>
+        <%= edit_post_helper(post) %>
+        <%= " | " if delete_post_helper(post) %>
+        <%= delete_post_helper(post) %>
+        <%#*border separators required for prettyness, but requires method too be called twice%>
+  </p>
+</div>
+<br />

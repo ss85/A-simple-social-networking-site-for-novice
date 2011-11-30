@@ -1,0 +1,32 @@
+<%#*Partial to display post form%>
+<div class="newPost">
+  <h2>What are you reading?</h2>
+  <% form_for(@post) do |f| %>
+    <%= f.error_messages %>
+
+    <% f.fields_for :book, @post.book do |book_form| %>
+      <p>
+      <%= book_form.label :title %>
+      <%= book_form.text_field :title, :size => 20 %> by
+      <%= book_form.label :author %>
+      <%= book_form.text_field :author, :size => 15 %>
+      </p>
+    <% end %>
+
+    <p>
+      <%= f.label :mood, "Current Mood:&nbsp;&nbsp;&nbsp;&nbsp;" %>
+      <%= f.text_field :mood, :size => 15 %>
+    </p>
+    <p>
+      <%= f.label :location, "Current Location: " %>
+      <%= f.text_field :location, :size => 15 %>
+    </p>
+    <p>
+      <%= f.label :thoughts, "Thoughts on the book:" %><br />
+      <%= f.text_area :thoughts, :cols => 30, :rows => 5 %>
+    </p>
+    <p class="button">
+      <%= f.submit button_text %>
+    </p>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<%#*Partial to display a list of users%>
+<% user_list.each do |user| %>
+  <div class="<%=  cycle('usersOdd','usersEven')%>">
+    <div class="floatRight"><p class="followme"><%= follow_helper(user) %></p></div>
+  <p class="username"><%= user_posts_helper(user) %></p>
+  <p class="userdetails">User joined on: <%= user.created_at.getlocal.to_s(:long_ordinal)   %></p>
+  <p class="userdetails"><%= link_to 'View user details', user %></p>
+</div>
+<br />
+<% end %>

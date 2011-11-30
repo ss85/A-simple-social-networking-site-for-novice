@@ -1,0 +1,16 @@
+<%#*Partial to display search results%>
+<%#*Used to clean up view file%>
+<% if results.empty? %>
+  <p>Sorry,no results found searching for <%= searchTerm %> as a <%= searchFor %>! Try another search?</p>
+<% else %>
+  <% unless searchTerm.empty? %>
+    <h3>Searching for <%= searchTerm %> as a <%= searchFor %> found <%= pluralize(results.size, "result") %>!</h3>
+  <% end %>
+  <% if searchFor != "User" %>
+    <% results.each do |post| %>
+      <%= render :partial => "posts/displayPost", :locals => {:post => post} %>
+    <% end %>
+  <% else %>
+    <%= render :partial => "users/listUsers", :locals => {:user_list => results} %>
+  <% end %>
+<% end %>

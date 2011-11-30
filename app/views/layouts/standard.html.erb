@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Bookie</title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+  <div id="universe">
+      <div id="container">
+        <div id="header">
+          <%= display_current_user() %>
+        </div>
+        <div id="nav">
+        <ul id="navigation">
+            <li><%= link_to 'Home', posts_path, :id => "navigation" %></li>
+            <%= control_panel_helper() %>
+            <%= login_or_out_helper() %>
+        </ul>
+        </div>
+        <div id ="main">
+        <br />
+        <%#*Not sure why I need this - if no break is given a white line is shown above the main part of the view%>
+          <% if !notice.nil? %>
+        <div class = "notices">
+        <p><%= notice %></p>
+        </div>
+          <% end %>
+          <%= yield %>
+        </div>
+        <div id="footerContainer">
+          <hr />
+          <div id="footer">
+              <p>
+                <strong>Application created by:</strong> Jarrod Spear - s0119210<br />
+                <strong>Course:</strong> Internet Application Development (COIT13224)<br />
+              </p>
+          </div>
+        </div>
+  </div>
+
+
+</body>
+</html>

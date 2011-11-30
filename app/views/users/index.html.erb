@@ -1,0 +1,6 @@
+<h1>Listing users</h1>
+<%= link_to 'Click here to create a new user', new_user_path %>
+<br /><br />
+<%= render :partial => "listUsers", :locals => {:user_list => @users} %>
+<br />
+<%= link_to 'Back to all users', users_path %>

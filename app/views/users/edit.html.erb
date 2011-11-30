@@ -1,0 +1,22 @@
+<%= render :partial => "showUser", :locals => {:user => @user} %>
+
+<h1>User Settings</h1>
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation, 'Confirm: ' %><br />
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to "Delete my account", @user, :confirm => 'Are you sure you want to delete your account?', :method => :delete %><br />
+<%= link_to 'Back to all users', users_path %>
